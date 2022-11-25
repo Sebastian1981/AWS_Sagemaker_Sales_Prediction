@@ -130,3 +130,7 @@ dmypy.json
 
 # dont sync data
 /data
+
+# dont sync model artifacts
+/model
+*.joblib
