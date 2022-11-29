@@ -37,7 +37,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     # Hyperparameters are described here.
-    parser.add_argument('--max_depth', type=int,)
+    parser.add_argument('--max_depth', type=int)
+    parser.add_argument('--n_estimators', type=int)
     parser.add_argument('--eta', type=float)
     parser.add_argument('--gamma', type=int)
     parser.add_argument('--min_child_weight', type=int)
@@ -68,6 +69,7 @@ if __name__ == '__main__':
 
     train_hp = {
         'max_depth': args.max_depth,
+        'n_estimators': args.n_estimators,
         'eta': args.eta,
         'gamma': args.gamma,
         'min_child_weight': args.min_child_weight,
